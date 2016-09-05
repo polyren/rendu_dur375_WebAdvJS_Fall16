@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cost_cal_style.css">
+	<script src="jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script language="javascript" src="calculator.js"></script>
+	<title></title>
+<!-- // ==============================
+// rendu 2016
+// ==============================
+// instruction：
+// first,click the program you want. Then check the estimate costs and time costs inthe downleft bar. After that,
+// If you have your own plan, like require me to finish those faster than the estimate time, you can insert the days
+// diractly into the rightdown bar, then you can get a budget of how much it will costs(must be expensive if you want
+// to be quick). You can also insert your budegt and it will show how long it will take.
+
+// becareful:
+// you can not do calcuation before you select any of the program, because the result has relations with program vales.
+// ============================== -->
+</head>
+<body>
+	<main class="content">
+		<div class="selection_top">
+				<h2 class="title">
+					<img src="title.svg" height="44">
+				</h2>
+				<h3 class="subtitle1">
+					<img src="subtitle1.svg" height="39">
+				</h3>
+			</div>
+		<div class="selection_wrapper">
+			<div class="selection_list_logo clearfix">
+				<h1 class="title_logo">
+					<img src="title_logo.svg" width="180">
+				</h1>
+				<ul class="a">
+					<li>
+						<div class="list" id="1" value="1000">single logo</div>
+					</li>
+					<li>
+						<div class="list" id="2" value="500">ink draft</div>
+					</li>
+					<li>
+						<div class="list" id="3" value="500">inverse draft</div>
+					</li>
+					<li>
+						<div class="list" id="4" value="800">standerdizing</div>
+					</li>
+					<li>
+						<div class="list" id="5" value="800">grid coordinate</div>
+					</li>
+					<li>
+						<div class="list" id="6" value="400">headspace rule</div>
+					</li>
+					<li>
+						<div class="list" id="7" value="1000">collored demo</div>
+					</li>
+				</ul>
+			</div>
+			<div class="selection_list_font clearfix">
+				<h1 class="title_font">
+					<img src="title_font.svg" width="180">
+				</h1>
+				<ul class="a">
+					<li>
+						<div class="list" id="8" value="500">chinese full</div>
+					</li>
+					<li>
+						<div class="list" id="9" value="500">chinese short</div>
+					</li>
+					<li>
+						<div class="list" id="10" value="1000">CH full GC</div>
+					</li>
+					<li>
+						<div class="list" id="11" value="1000">CH short GC</div>
+					</li>
+					<li>
+						<div class="list" id="12" value="500">english full</div>
+					</li>
+					<li>
+						<div class="list" id="13" value="500">english short</div>
+					</li>
+					<li>
+						<div class="list" id="14" value="500">ENG full GC</div>
+					</li>
+					<li>
+						<div class="list" id="15" value="500">ENG short GC</div>
+					</li>
+					<li>
+						<div class="list" id="16" value="2000">print font</div>
+					</li>
+				</ul>
+			</div>
+			<div class="selection_list_color clearfix">
+				<h1 class="title_color">
+					<img src="title_color.svg" width="180">
+				</h1>
+				<ul class="a">
+					<li>
+						<div class="list" id="17" value="1000">print</div>
+					</li>
+					<li>
+						<div class="list" id="18" value="500">complementary</div>
+					</li>
+					<li>
+						<div class="list" id="19" value="500">derivative ID</div>
+					</li>
+					<li>
+						<div class="list" id="20" value="200">background</div>
+					</li>
+					<li>
+						<div class="list" id="21" value="800">derivative rule</div>
+					</li>
+					<li>
+						<div class="list" id="22" value="500">background rule</div>
+					</li>
+				</ul>
+			</div>
+			<div class="selection_list_graphic clearfix">
+				<h1 class="title_graphic">
+					<img src="title_graphic.svg" width="180">
+				</h1>
+				<ul class="a">
+					<li>
+						<div class="list" id="23" value="600">colored draft</div>
+					</li>
+					<li>
+						<div class="list" id="24" value="1000">extenstion DEMO</div>
+					</li>
+					<li>
+						<div class="list" id="25" value="700">usage rule</div>
+					</li>
+					<li>
+						<div class="list" id="26" value="700">assembling rule</div>
+					</li>
+				</ul>
+			</div>
+			<div class="selection_list_assemble clearfix">
+				<h1 class="title_rule">
+					<img src="title_rule.svg" width="180">
+				</h1>
+				<ul class="a">
+					<li>
+						<div class="list" id="27" value="500">font/logo</div>
+					</li>
+					<li>
+						<div class="list" id="28" value="500">logo/AG</div>
+					</li>
+					<li>
+						<div class="list" id="29" value="500">logo/font/AG</div>
+					</li>
+					<li>
+						<div class="list" id="30" value="500">prohibitive rule</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cal_wrapper">
+			<div class="estimate_wrapper clearfix">
+				<div class="estimate_top">
+					<h1 class="title.svg">
+						<img src="estimate_top.svg" width="356">
+					</h1>
+				</div>
+				<div class="cal_wrapper">
+					<div class="estimate_price_wrapper " >
+						<div class="estimate_price">price
+						</div>
+						<input class="estimate_price_num"  name="value_sum" value="0 RMB" type="text" style="text-align:right" readonly> 
+					</div>
+					<span class="hengxian">
+						<img src="hengxian.svg" width="356" class="hengxian">
+					</span>
+					<div class="estimate_time_wrapper "> 
+						<div class="estimate_time">time costs
+						</div>
+						<input class="estimate_time_number" name="time_sum" value="0 day" type="text" style="text-align:right" readonly>
+					</div>
+					<span class="hengxian">
+						<img src="hengxian.svg" width="356" class="hengxian">
+					</span>
+				</div>
+			</div>
+			<div class="plane_wrapper clearfix">
+				<div class="plan_top">
+					<h1 class="title">
+						<img src="plan_top.svg" width="356">
+					</h1>
+				</div>
+				<div class="cal_wrapper">
+					<div class="plan_price_wrapper " >
+						<div class="plan_price">price
+						</div>
+						<input class="plan_price_num" id="a1" name="planvalue_sum" type="text" style="text-align:right" >
+					</div>
+					<span class="hengxian">
+						<img src="hengxian.svg" width="356" class="hengxian">
+					</span>
+					<div class="plan_time_wrapper ">
+						<div class="plan_time">time costs
+						</div>
+						<input class="plan_time_number" id="a2" name="plantime_sum" type="text" style="text-align:right" >
+					</div>
+					<span class="hengxian">
+						<img src="hengxian.svg" width="356" class="hengxian">
+					</span>
+				</div>
+			</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>
