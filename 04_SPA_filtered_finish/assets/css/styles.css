@@ -21,7 +21,7 @@ a:link, a:visited {
 ------------------*/
 .main-content{
 	box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 	margin: 0;
 	padding: 0;
 }
@@ -130,7 +130,7 @@ form {
 }
 .students-list{
 	list-style:none;
-	margin-left: 255px;
+	margin-left: 300px;
 	padding: 20px 0;
 	opacity: 0;
 	font-size: 0;
@@ -157,6 +157,7 @@ form {
 .students-list > li.hidden{
 	opacity: 0.2;
 	pointer-events: none;
+	display:none;
 }
 
 /* The Project image */
