@@ -1,0 +1,355 @@
+*{
+	box-sizing: inherit;
+}
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+	font-weight: normal;
+	cursor: auto;
+	text-align: center;
+}
+ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+button{
+	align-items:center;
+	background-color: white;
+	border:none;
+	padding:0;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	cursor:pointer;
+	outline:none;
+}
+
+.list{
+	cursor: pointer;
+	font-family: "Times New Roman";
+	font-weight: lighter;
+	word-spacing:8px; 
+	letter-spacing: 1px;
+	font-style: italic;
+
+}
+
+.content{
+	position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 0rem;
+    padding-bottom: 8rem;
+}
+
+.selection_top{
+	text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.subtitle1{
+	margin:1rem 0px 2rem auto;;
+}
+
+.selection_wrapper{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.cal_wrapper{
+	text-align: center;
+}
+
+.estimate_wrapper{
+	position: relative;
+	width: 356px;
+	margin-top: 3rem;
+	margin-right: 3rem;
+}
+.plane_wrapper{
+	position: relative;
+	width: 356px;
+	margin-top: 3rem;
+	margin-left: 3rem;
+}
+
+.estimate_price_wrapper{
+	position: relative;
+	height: 25px;
+}
+
+.estimate_price {
+	float: left;
+	margin-bottom: 1px;
+    height: 25px;
+    font-family: "Times New Roman";
+	font-weight: lighter;
+	word-spacing:8px; 
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.estimate_price_num{
+	float:right;
+	margin-bottom: 1px;
+	margin-left: 6rem;
+	margin-right: 0rem;
+
+}
+
+.estimate_time_wrapper {
+	margin-top: 1.5rem;
+	position: relative;
+	height: 25px;
+}
+
+.estimate_time{
+	float: left;
+	margin-bottom: 1px;
+    height: 25px;
+    font-family: "Times New Roman";
+	font-weight: lighter;
+	word-spacing:8px; 
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.estimate_time_number{
+	float:right;
+	margin-bottom: 1px;
+	margin-left: 4rem;
+	margin-right: 0rem;
+
+}
+
+.plan_price_wrapper{
+	position: relative;
+	height: 25px;
+}
+
+.plan_price{
+	float: left;
+	margin-bottom: 1px;
+	font-family: "Times New Roman";
+	font-weight: lighter;
+	word-spacing:8px; 
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.plan_price_num{
+	float:right;
+	margin-bottom: 1px;
+	margin-left: 6rem;
+	margin-right: 0rem;
+}
+
+.plan_time_wrapper {
+	margin-top: 1.5rem;
+	position: relative;
+	height: 25px;
+}
+
+.plan_time{
+	float: left;
+	margin-bottom: 1px;
+    height: 25px;
+    font-family: "Times New Roman";
+	font-weight: lighter;
+	word-spacing:8px; 
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.plan_time_number{
+	float:right;
+	margin-bottom: 1px;
+	margin-left: 4rem;
+	margin-right: 0rem;
+}
+input.watermark{
+	color: #999;
+
+}
+input{
+		text-indent: 5px;
+		width:200px;
+		font-size:8px;
+}
+
+
+.hengxian{
+    margin: 0 0rem 0 0;
+    position: relative;
+    float:left;
+}
+li{
+	margin-bottom: 1rem;
+	/*background-color: rgb(255,255,255);*/
+	color:rgb(64,64,64);
+}
+.media-clicked{
+	color:#FFFFFF;
+	background-color:#B3B3B3; 
+}
+.selection_list_logo{
+	width: 184px;
+	vertical-align: top;
+}
+
+.selection_list_font{
+	width: 184px;
+	vertical-align: top;
+}
+
+.selection_list_color{
+	width: 184px;
+	vertical-align: top;
+}
+
+.selection_list_graphic{
+	width: 184px;
+	vertical-align: top;
+}
+
+.selection_list_assemble{
+	width: 184px;
+	vertical-align: top;
+}
+
+
+.clearfix{
+	display: inline-block;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 827px){
+.selection_list_logo{
+	width: calc(80vw/4);
+	vertical-align: top;
+}
+
+.selection_list_font{
+	width: calc(80vw/4);
+	vertical-align: top;
+}
+
+.selection_list_color{
+	width: calc(80vw/4);
+	vertical-align: top;
+}
+
+.selection_list_graphic{
+	width: calc(80vw/4);
+	vertical-align: top;
+}
+
+.selection_list_assemble{
+	width: calc(80vw/4);
+	vertical-align: top;
+}
+}
+
+@media screen and (min-width: 400px) and (max-width: 827px){
+
+ul{
+	display:none;
+}
+.selection_list_logo{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_font{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_color{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_graphic{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_assemble{
+	width: calc(80vw/2);
+	vertical-align: top;
+
+}
+
+.estimate_wrapper{
+	position: relative;
+	width: 356px;
+	margin-top: 4rem;
+	margin-right: 0rem;
+}
+.plane_wrapper{
+	position: relative;
+	width: 356px;
+	margin-top: 4rem;
+	margin-left: 0rem;
+}
+}
+
+/* FOR MOBILE DEVICES*/
+/* Source for different devices http://cssmediaqueries.com/target/ */
+@media screen and (max-device-width: 500px) and (orientation: portrait){
+	.selection_list_logo{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_font{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_color{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_graphic{
+	width: calc(80vw/2);
+	vertical-align: top;
+}
+
+.selection_list_assemble{
+	width: calc(80vw/2);
+	vertical-align: top;
+
+}
+
+.estimate_wrapper{
+	position: relative;
+	width: 356px;
+	margin-top: 4rem;
+	margin-right: 0rem;
+}
+.plane_wrapper{
+	position: relative;
+	width: 356px;
+	margin-top: 4rem;
+	margin-left: 0rem;
+}
+ul{
+	display:none;
+}
+}
