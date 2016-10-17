@@ -261,7 +261,7 @@ app.main = (function() {
 	}
 
 	/*------------------------------------------------*/
-	// Find and render the filtered data results. Arguments are:
+	// Find and render the filtered render results. Arguments are:
 	// filters - our global variable - the object with arrays about what we are searching for.
 	// students - an object with the full students list (from students.json).
 	/*------------------------------------------------*/

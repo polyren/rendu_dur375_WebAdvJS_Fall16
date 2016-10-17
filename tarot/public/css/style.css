@@ -1,0 +1,183 @@
+body{
+	background-color: #E6E6E6;
+	margin:0;
+	display:block;
+}
+*{
+	box-sizing:border-box;
+}
+
+div {
+	display:block;
+}
+h1,h3{
+	margin-right: 60px;
+}
+
+h3{
+	line-height: 1.5;
+}
+h1{
+	margin-bottom: 50px;
+}
+.notes{
+	float:left;
+	text-align:center;
+	width:276px;
+	height:210px;
+	display:inline-block;
+	margin: 5px;
+	padding: 20px;
+	box-sizing:border-box;
+	line-height: 1.5;
+	font-style: italic;
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.custom_page{
+	width:90%;
+	height:90%;
+	opacity:0;
+	vertical-align: middle;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2em;
+	/*bottom: 50%;*/
+	pointer-events: none;
+
+	/*display:block;*/
+}
+.main_content{
+	padding-right:0px;
+	padding-left:0px;
+	margin-right:0px;
+	margin-left:0px;
+	width:auto;
+	display:table;
+	content:" ";
+	clear:both;
+}
+
+.flipper{
+	float:left;
+	text-align:center;
+	width:133px;
+	height:210px;
+	display:inline-block;
+	margin: 5px;
+}
+
+.front{
+	width:133px;
+	height:100%;
+}
+
+
+.back{
+	width:133px;
+	height:100%;
+}
+#button{
+	margin-top:60px;
+}
+.custom_page.visible {
+	/*display:block;*/
+	opacity: 1;
+	transition: 1s;
+	pointer-events: auto;
+}
+
+/*---------------------------
+	Single Card Page
+----------------------------*/
+.meaning{
+	/*z-index: 100;*/
+	/*opacity: 0;*/
+}
+.overlay{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.6s;
+}
+.meaning.visible .overlay {
+	height: 100%;
+}
+
+.meancontainer{
+	box-sizing: border-box;
+	height: 100vh;
+	position: absolute;
+	left: 200px;
+	right:5%;
+	margin-left: 100px;
+	margin-right: 40px;
+	top: 55px;
+	pointer-events: none;
+	background-color:  #E6E6E6;
+	opacity: 0;
+	transition: 0.4s;
+	text-align: left;
+	display: none;
+}
+.meaning.visible .meancontainer{
+	opacity: 1;
+	transition: 1.4s;
+	display: block;
+}
+
+.logo{
+	box-sizing: border-box;
+	position: fixed;
+	text-align: left;
+	left:1.2em;
+	top:3em;
+	opacity:0;
+	pointer-events: none;
+	/*display:none;*/
+}
+.meaning.visible .logo{
+	display: block;
+	opacity: 1;
+	transition: 1.4s;
+	}
+
+.close{
+	position: absolute;
+	right: 60px;
+	top: 55px;
+	font-size: 80px;
+	color: #000;
+	cursor: pointer;
+	font-weight: 100;
+	opacity: 0;
+
+}
+.meaning.visible .close{
+	opacity: 1;
+	transition: 1.4s;
+
+}
+.logobar{
+	box-sizing: border-box;
+    padding: 25px 30px 30px;
+    width: 240px;
+    top:-2em;
+    background-color: black;
+    position: fixed;
+    text-align: left;
+    color: black;
+    opacity: 0;
+    pointer-events: none;
+    height: 111.1vh;
+    /*display:none;*/
+}
+
+.meaning.visible .logobar{
+	opacity: 1;
+	transition: 1.4s;
+	pointer-events: auto;
+	display:block;
+}
